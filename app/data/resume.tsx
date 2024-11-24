@@ -223,7 +223,7 @@ export const resume = {
         {
           name : "windam-v1",
           title: "Windam Chat V1",
-          href: "https://windam-chat.vercel.app/",
+          href: "/projects/windam-v1",
           description: "Windam Chat V1 est une application de messagerie conçue comme un projet d'apprentissage pour expérimenter des technologies modernes comme React, Next.js, Tailwind CSS, et Firebase. L'accent est mis sur l'authentification utilisateur sécurisée, mais le système de messagerie n'est pas destiné à des communications sensibles. Ce projet vise à démontrer des compétences techniques.",
           dates: "2023",
           tags: ["React", "Next.js", "Firebase", "Tailwind CSS", "Chat Application", "Frontend"],
@@ -260,7 +260,7 @@ export const resume = {
         {
           name : "promptmaster",
           title: "PromptMaster",
-          href: "https://promptmaster.vercel.app/",
+          href: "/projects/promptmaster",
           description: "PromptMaster est un projet de cours où une API REST est développée avec Flask pour gérer des utilisateurs et des propositions de textes (Prompts). Le système inclut des rôles différents pour les utilisateurs, comme administrateurs et membres, et propose des mécanismes pour gérer les connexions, autorisations, ainsi que la notation et l'activation des Prompts en fonction des votes.",
           dates: "2024 - en cours",
           tags: ["Flask", "PostgreSQL", "JWT", "API REST", "Gestion des utilisateurs", "Gestion des Prompts", "Notations", "Votes"],
@@ -274,6 +274,20 @@ export const resume = {
           ]
         },
         {
+          name : "odc-inside",
+          title: "Odc Inside",
+          href: "/projects/odc-inside",
+          description: "Un site comprenant deux parties principales : une section 'Inside' permettant de tirer au sort aléatoirement un étudiant de Sonatel Academy pour aller à la table, et une section présentant les alumni de la Sonatel Academy avec des filtres par niveau et d'autres critères pour les recruteurs.",
+          dates: "2024",
+          tags: ["Firebase", "Next.js", "ODC", "Alumni", "Random Selection"],
+          image: "/img/preview/odc-inside.png", 
+          links: [
+            { icon: <Icons.globe className="size-4" />, type: "demo", href: "https://odc-dev-data.vercel.app/" },
+            { icon: <Icons.github className="size-4" />, type: "github", href: "https://github.com/mouhamedlamotte/odc-dev-data" },
+            { icon: <Icons.notion className="size-4" />, type: "notion", href: "https://www.notion.so/invite/8dabcc1560363cea85ebb60b58ccbea52543dc6a" },
+          ]
+        },        
+        {
           name : "mysubito-landing-clone",
           title: "MySubito Landing Page Clone",
           href: "/projects/mysubito-landing-clone",
@@ -285,11 +299,11 @@ export const resume = {
         {
           name : "aora",
           title: "Aora",
-          href: "https://aora-app.vercel.app/",
+          href: "/projects/aora",
           description: "Aora est une application mobile de partage de vidéos et de création de contenu, développée avec React Native, Appwrite et NativeWind. L'application permet aux utilisateurs de créer, partager et interagir avec des vidéos tout en offrant des outils intuitifs de création de contenu et une interface fluide.",
           dates: "2024",
           tags: ["React Native", "Appwrite", "NativeWind", "Mobile App", "Video Sharing", "Content Creation"],
-          image: "/img/preview/aora-light.png",
+          image: "/img/preview/aora.png",
           links: [
             {
               icon: <Icons.github className="size-4" />,
@@ -301,35 +315,76 @@ export const resume = {
         {
           name : "mysubito",
           title: "MySubito app",
-          href: "https://mysubito-app.vercel.app/",
+          href: "/projects/mysubito",
           description: "MySubito est une refonte de l'application Subito, développée avec React Native. L'application permet aux utilisateurs de réserver des voitures de manière simple et rapide, avec des fonctionnalités comme la gestion des réservations, le suivi en temps réel et des notifications pour une expérience utilisateur fluide.",
           dates: "2024 - en cours",
           tags: ["React Native", "Mobile App", "Car Reservation", "Tailwind CSS", "Firebase"],
-          image: "/img/preview/mysubito-light.png",
+          image: "/img/preview/subitoapp.png",
           links: [
             {
               icon: <Icons.github className="size-4" />,
-              type: "landing page",
-              href: "https://mysubito-app.vercel.app/"
+              type: "code",
+              href: "https://github.com/mouhamedlamotte/mysubito/"
             }
           ]
         },
         {
           name : "gestion-fichiers",
           title: "Gestion de Fichiers",
-          href: "https://gestion-fichiers-app.vercel.app/",
-          description: "Ce projet permet de gérer des fichiers au format JSON, YAML, XLSX, CSV, et plus. L'utilisateur peut importer un fichier dans l'un de ces formats et le convertir dans un autre format. L'interface, développée avec Flask et Tailwind CSS, offre une expérience simple et intuitive pour la manipulation de fichiers de données.",
+          href: "/projects/gestion-fichiers",
+          description: "Ce projet permet de gérer des fichiers au format JSON, YAML, XLSX, CSV, et plus. Il dispose d'une version desktop, développée avec Tkinter, et d'une version web utilisant Flask, Tailwind CSS et JavaScript. Les utilisateurs peuvent importer des fichiers dans l'un de ces formats et les convertir dans un autre format, grâce à une interface intuitive et fluide.",
           dates: "2024",
-          tags: ["Flask", "Tailwind CSS", "File Management", "JSON", "YAML", "XLSX", "CSV"],
-          image: "/img/preview/gestion-fichiers-light.png",
+          tags: ["Flask", "Tkinter", "Tailwind CSS", "JavaScript", "File Management", "JSON", "YAML", "XLSX", "CSV"],
+          image: "/img/preview/gestion-fichier.png",
           links: [
             {
               icon: <Icons.github className="size-4" />,
-              type: "demo",
-              href: "https://gestion-fichiers-app.vercel.app/"
+              type: "Code",
+              href: "https://github.com/mouhamedlamotte/gestion_fichier"
             }
           ]
-        }                 
+        },
+        {
+          name : "organick",
+          title: "Organick",
+          href: "/projects/organick",
+          description: "Une intégration web basée sur une maquette fournie, réalisée avec Tailwind CSS. Cet exercice met en avant les compétences en design réactif et en structuration moderne.",
+          dates: "2024",
+          tags: ["Tailwind CSS", "Frontend", "Web Integration", "Responsive Design"],
+          image: "/img/preview/organick.png",
+          links: [
+              { icon: <Icons.globe className="size-4" />, type: "demo", href: "https://organick-v2.vercel.app/" },
+              { icon: <Icons.github className="size-4" />, type: "github", href: "https://github.com/mouhamedbaba/organick-2" },
+          ]
+        },
+        {
+          name : "golio",
+          href: "/projects/golio",
+          title: "Golio",
+          description: "Une intégration web réalisée uniquement avec HTML et CSS, basée sur une maquette fournie. Cet exercice se concentre sur la structuration propre et le design fidèle aux maquettes.",
+          dates: "2024",
+          tags: ["HTML", "CSS", "Frontend", "Web Integration"],
+          image: "/img/preview/golio.png",
+          links: [
+            { icon: <Icons.globe className="size-4" />, type: "demo", href: "https://golio.vercel.app/" },
+            { icon: <Icons.github className="size-4" />, type: "github", href: "https://github.com/mouhamedbaba/golio" },
+        ]
+        },
+        {
+          name : "bella",
+          href: "/projects/bella",
+          title: "Bella Ojene",
+          description: "Une intégration web fidèle à une maquette fournie, réalisée exclusivement avec HTML et CSS. L'objectif est de perfectionner les compétences de base en intégration et en design statique.",
+          dates: "2024 - en cours",
+          tags: ["HTML", "CSS", "Frontend", "Web Integration"],
+          image: "/img/preview/bella.png",
+          links: [
+            { icon: <Icons.globe className="size-4" />, type: "demo", href: "https://bella-ojene-sa.vercel.app/Bella_Onoji/index.html" },
+            { icon: <Icons.github className="size-4" />, type: "github", href: "https://github.com/mouhamedbaba/bella-Ojene-sa" },
+        ]
+        }
+                        
+              
     ]
     
 } as const
