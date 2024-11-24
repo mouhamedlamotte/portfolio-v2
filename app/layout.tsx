@@ -1,36 +1,53 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
-import Script from "next/script";
+import { Provider } from "./providers";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mouhameth Lamotte - Développeur Web",
   description: "Portfolio de Mouhameth Lamotte, développeur web passionné basé à Dakar",
-  keywords: ["développeur web", "Dakar", "Next.js", "Django", "Firebase", "Mouhameth Lamotte"],
+  keywords: [
+    "développeur web", 
+    "Dakar", 
+    "Next.js", 
+    "Django", 
+    "Firebase", 
+    "Mouhameth Lamotte", 
+    "développement web freelance", 
+    "création de sites web", 
+    "développement d'applications web", 
+    "développeur Next.js à Dakar", 
+    "solutions web sur mesure", 
+    "intégration Firebase", 
+    "développement d'API Django", 
+    "freelance en développement web", 
+    "portefeuille en ligne de développeur", 
+    "Mouhameth Lamotte portfolio", 
+    "développement frontend et backend", 
+    "réalisation de projets web à Dakar"
+  ]
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params : {locale}
 }: Readonly<{
   children: React.ReactNode;
+  params: { 
+    locale: string
+   }; 
 }>) {
 
   
-
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Provider locale={locale}>
           <div className="min-h-screen bg-background">
             <Navbar />
             <main className="">
@@ -38,8 +55,7 @@ export default function RootLayout({
             </main>
           </div>
           <Toaster />
-        </ThemeProvider>
-        <Script  src="http://localhost:3000/js/track.js" data-api-key="cm3n6j8wx000111m3dvlmfny5" />
+        </Provider>
       </body>
     </html>
   );

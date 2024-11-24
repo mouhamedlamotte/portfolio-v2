@@ -87,9 +87,9 @@ export default function Contact() {
         <CardHeader>
           <CardTitle>Formulaire de contact</CardTitle>
         </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <Form {...form} >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <CardContent className="space-y-4">
               <FormField
                 control={form.control}
                 name="name"
@@ -129,10 +129,13 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit">Envoyer</Button>
-            </form>
-          </Form>
+
         </CardContent>
+        <CardFooter className="flex justify-end">
+              <Button type="submit" className="">Envoyer</Button>
+          </CardFooter>
+              </form>
+              </Form>
       </Card>
     </div>
   );

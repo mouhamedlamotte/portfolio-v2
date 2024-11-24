@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 type Experience = {
     company: string;
@@ -9,6 +10,7 @@ type Experience = {
     year: string;
     description: string;
     technologies: string[];
+    logo? : string
 };
 
 
@@ -17,7 +19,15 @@ export const ExperienceCard = ({ exp  }: { exp: Experience}) => {
     <Card >
           <CardHeader>
             <div className="flex items-center justify-between flex-wrap gap-4">
-              <CardTitle>{exp.company}</CardTitle>
+              <CardTitle className='inline-flex items-center gap-2'>
+                {/* <Avatar className='rounded-md'>
+                  <AvatarFallback>
+                    {exp.company.charAt(0).toUpperCase()}
+                  </AvatarFallback>
+                  <AvatarImage src={exp.logo} />
+                </Avatar> */}
+                {exp.company}
+                </CardTitle>
               <Badge variant="outline">{exp.story}</Badge>
             </div>
           </CardHeader>

@@ -143,7 +143,6 @@ export default function Tictactoe() {
   const EasymachinePlay = () => {
     if (hasWinner || playerOne) return;
   
-    // Trouver toutes les cases vides
     let emptyCells: { i: number; j: number }[] = [];
   
     for (let i = 0; i < 3; i++) {
@@ -154,11 +153,10 @@ export default function Tictactoe() {
       }
     }
   
-    // Choisir une case vide aléatoirement parmi celles disponibles
     if (emptyCells.length > 0) {
       const randomIndex = Math.floor(Math.random() * emptyCells.length);
       const { i, j } = emptyCells[randomIndex];
-      handleUpdateMatrice(i, j, -1);  // La machine joue avec "0"
+      handleUpdateMatrice(i, j, -1);  
     }
   };
   
