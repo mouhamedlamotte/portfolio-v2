@@ -33,21 +33,17 @@ export const metadata: Metadata = {
   ]
 };
 
-export default async function LocaleLayout({
+export default function RootLayout({
   children,
-  params : {locale}
 }: Readonly<{
   children: React.ReactNode;
-  params: { 
-    locale: string
-   }; 
 }>) {
 
   
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <body className={inter.className}>
-        <Provider locale={locale}>
+        <Provider >
           <div className="min-h-screen bg-background">
             <Navbar />
             <main className="">
