@@ -3,12 +3,9 @@ import About from "./about/page";
 import Projects from "./projects/page";
 import Experience from "./experience/page";
 import Contact from "./contact/page";
-
+import RecentProjects from "@/components/sections/projets";
 
 export default function Home() {
-
-
-
   return (
     <div className="space-y-24">
       <section id="home" className="">
@@ -24,7 +21,7 @@ export default function Home() {
       </section>
 
       <section id="projects" className=" xl:px-40 scroll-mt-16">
-        <Projects />
+        <RecentProjects />
       </section>
 
       <section id="contact" className=" xl:px-40 scroll-mt-16">
@@ -32,7 +29,9 @@ export default function Home() {
       </section>
 
       <section className=" xl:px-40 ">
-       <p className="text-muted-foreground text-center text-sm">Copyright &copy; {new Date().getFullYear()} Mouhameth Lamotte</p>
+        <p className="text-muted-foreground text-center text-sm">
+          Copyright &copy; {new Date().getFullYear()} Mouhameth Lamotte
+        </p>
       </section>
     </div>
   );

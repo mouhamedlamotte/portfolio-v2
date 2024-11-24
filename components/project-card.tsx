@@ -73,12 +73,12 @@ export function ProjectCard({project, stack}: {project: Props, stack?: boolean})
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2 p-0">
-        {stack &&project.tags && project.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1">
+        {stack && project.tags && project.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1 px-2 pb-2">
             {project.tags?.map((tag) => (
               <Badge
                   key={tag}
-                  className="bg-gray-800 text-gray-300 border border-gray-700 hover:bg-gray-700"
+                  className="bg-gray-800 text-gray-300 border border-gray-700 hover:bg-gray-700 rounded-lg"
                 >
                   <p>{tag}</p>
                 </Badge>
